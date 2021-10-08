@@ -11,6 +11,7 @@ const baseUri = "ipfs://NewUriToReplace";
 const layerConfigurations = [
   {
     growEditionSizeTo: 10,
+    specialDir: 'faker',
     layersOrder: [
       { name: "Background" },
       { name: "Eyeball" },

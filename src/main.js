@@ -24,6 +24,11 @@ const {
   debugLogs,
   extraMetadata,
 } = require(path.join(basePath, "/src/config.js"));
+if (layerConfigurations.specialDir) {
+  buildDir = path.join(basePath, "/build/" + layerConfigurations.specialDir);
+  layersDir = path.join(basePath, "/layers/" + layerConfigurations.specialDir);
+}
+
 const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
 var metadataList = [];
